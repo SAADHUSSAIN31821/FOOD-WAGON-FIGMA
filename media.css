@@ -1,0 +1,142 @@
+@media only screen and (max-width: 900px) {
+    .abctext3{
+     font-size: 30px;
+    }
+    .box2{
+      display: flex;
+      gap: 1rem;
+     }
+     .footer-text{
+       justify-content: center;
+       align-items: center;
+       display: flex;
+       text-align: center;
+       margin-bottom: 5%;
+     }
+     .footer-bar{
+       font-size: 16px;
+       width: 100%;
+       display: flex;
+       justify-content: space-around;
+     }
+     .footer-bar-text{
+       font-size: 14px;
+ 
+     }
+  }
+  @media screen and (max-width: 700px) {
+    .abctext3{
+        font-size: 20px;
+        
+    }
+    .box2{
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+    }
+    .footer-text{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      text-align: center;
+      margin-bottom: 5%;
+    }
+    .my-btun{
+      margin-top: 4%;
+    }
+    .footer-bar{
+      font-size: 14px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+    .footer-btn{
+      margin-top: 2%;
+    }
+    .footer-bar-text{
+      font-size: 12px;
+
+    }
+    
+  }
+  @media screen and (max-width:500px) {
+    .footer-bar{
+      font-size: 12px;
+      width: 100%;
+    }
+    .footer-bar-text{
+      font-size: 10px;
+
+    }
+    .item{
+      font-size: 35px;
+    }
+    .abctext3{
+      font-size: 16px;
+  }
+  .proceed{
+    padding:13% 8%;
+  }
+
+  .abc-proceed{
+      margin: 3%;
+    padding: 2%;
+  }
+  .column2-row2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4%;
+  }
+  .my-button{
+    padding: 1.5% !important;
+  }
+  .my-btun{
+    margin-top: 5%;
+    margin-left: 3%;
+  }
+  .box2{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+   }
+   .footer-input{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5%;
+  }
+  }
+  @media screen  and (max-width:400px){
+    .footer-bar{
+      font-size: 12px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .footer-bar-text{
+      font-size: 12px;
+
+    }
+    .proceed{
+      padding:10% 6%;
+    }
+    .item{
+      font-size: 30px;
+    }
+    .footer-input{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10%;
+  }
+    .body-box1 .box1-text{
+        font-size:40px;
+    }
+    .abctext3{
+        font-size: 14px;
+    }
+ 
+    .abc-proceed{
+        margin: 2%;
+      padding: 2%;
+    }
+  }

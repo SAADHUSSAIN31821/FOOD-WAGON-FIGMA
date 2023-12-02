@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="./images/title.png" type="image/x-icon">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Open+Sans:wght@300&family=Quicksand:wght@600&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Quicksand:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <title>food wagon</title>
+</head>
+
+<body>
+  <div class="container-xxl container-xl container-lg container-md container-sm container">
+  <div class="header">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#">
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30" fill="none">
+              <mask id="mask0_401_1245" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28"
+                height="30">
+                <path
+                  d="M8.89428 26.3647C8.89428 28.366 7.27197 29.9883 5.27075 29.9883C3.26953 29.9883 1.64722 28.366 1.64722 26.3647C1.64722 24.3635 3.26953 22.7412 5.27075 22.7412C7.27197 22.7412 8.89428 24.3635 8.89428 26.3647Z"
+                  fill="#C4C4C4" />
+                <path
+                  d="M26.3533 26.3647C26.3533 28.366 24.731 29.9883 22.7297 29.9883C20.7285 29.9883 19.1062 28.366 19.1062 26.3647C19.1062 24.3635 20.7285 22.7412 22.7297 22.7412C24.731 22.7412 26.3533 24.3635 26.3533 26.3647Z"
+                  fill="#C4C4C4" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M25.1913 23.7058C25.4382 23.9345 25.4094 24.3209 25.1508 24.5363C23.7802 25.6779 22.0174 26.3647 20.0941 26.3647H19.7649C19.401 26.3647 19.0998 26.0671 19.1652 25.7091C19.4737 24.0209 20.9522 22.7412 22.7296 22.7412C23.68 22.7412 24.545 23.1071 25.1913 23.7058ZM27.0987 22.1282C26.8986 22.5093 26.3844 22.543 26.0504 22.2717C25.144 21.5354 23.9883 21.0942 22.7296 21.0942C20.0414 21.0942 17.8233 23.1066 17.4996 25.7072C17.4547 26.0682 17.164 26.3647 16.8002 26.3647H11.2C10.8361 26.3647 10.5455 26.0682 10.5006 25.7072C10.1769 23.1066 7.95876 21.0942 5.27059 21.0942C4.0118 21.0942 2.85608 21.5354 1.94969 22.2718C1.61563 22.5431 1.10145 22.5094 0.901402 22.1283C0.325709 21.0317 0 19.7833 0 18.4588V16.8116C0 16.4478 0.294965 16.1528 0.658823 16.1528H27.3412C27.705 16.1528 28 16.4478 28 16.8116V18.4588C28 19.7832 27.6743 21.0316 27.0987 22.1282ZM28 13.8469C28 14.2108 27.705 14.5057 27.3412 14.5057H0.658824C0.294965 14.5057 0 14.2108 0 13.8469V9.89402C0 9.53016 0.294965 9.2352 0.658823 9.2352H27.3412C27.705 9.2352 28 9.53016 28 9.89402V13.8469ZM7.90588 0.0117188C3.883 0.0117188 0.561907 3.0164 0.0643695 6.904C0.0168356 7.27541 0.318678 7.58814 0.693122 7.58814H27.3069C27.6813 7.58814 27.9832 7.27541 27.9356 6.904C27.4381 3.0164 24.117 0.0117188 20.0941 0.0117188H7.90588ZM5.27059 22.7412C7.04795 22.7412 8.52644 24.0209 8.83496 25.7091C8.90037 26.0671 8.59914 26.3647 8.23528 26.3647H7.90588C5.98268 26.3647 4.21987 25.6779 2.84928 24.5364C2.59074 24.321 2.56193 23.9345 2.80878 23.7059C3.45509 23.1072 4.3201 22.7412 5.27059 22.7412Z"
+                  fill="#C4C4C4" />
+              </mask>
+              <g mask="url(#mask0_401_1245)">
+                <rect x="-1.64722" y="-2.29395" width="33.6" height="10.8706" fill="url(#paint0_linear_401_1245)" />
+                <rect x="-1.64722" y="15.4941" width="33.6" height="16.4706" fill="#FFA833" />
+                <rect x="-1.64722" y="8.57666" width="33.6" height="7.24706" rx="3.62353" fill="#F17228" />
+                <rect x="-23.0586" y="22.7412" width="31.9529" height="7.24706" fill="#F58D00" />
+                <rect x="19.1062" y="22.7412" width="31.9529" height="7.24706" fill="#F58D00" />
+                <ellipse cx="8.11249" cy="2.82316" rx="1" ry="0.5" transform="rotate(-20.8548 8.11249 2.82316)"
+                  fill="white" />
+                <ellipse cx="14" cy="2.5" rx="1" ry="0.5" fill="white" />
+                <ellipse cx="19.1176" cy="2.91225" rx="1" ry="0.5" transform="rotate(28.1155 19.1176 2.91225)"
+                  fill="white" />
+              </g>
+              <defs>
+                <linearGradient id="paint0_linear_401_1245" x1="14.9999" y1="-0.5" x2="14.9999" y2="17"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFD16D" />
+                  <stop offset="1" stop-color="#FF7A00" />
+                </linearGradient>
+              </defs>
+            </svg></span>
+          <span class="image"><img src="images/Frame 36.png" alt=""></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item  item1">
+              <a class="nav-link " aria-current="page" href="#">
+                <div>Deliver to:</div>
+              </a>
+            </li>
+            <li class="nav-item  item3">
+              <a class="nav-link " href="#" role="button"> <span class="nav-icon"><img src="./images/map-marker-alt.png"
+                    alt=""></span>
+                <span>Current Location</span>
+
+              </a>
+            </li>
+            <li class="nav-item item4">
+              <a class="nav-link " aria-disabled="true">Mohammadpur Bus Stand, Dhaka</a>
+            </li>
+          </ul>
+          <form class="d-flex " role="search">
+             <div class="search-icon"><img src="./images/Search.png" alt=""> </div>
+            <input class="form-control me-2 my-input my-input1 " type="search" placeholder= "Search Food" aria-label="Search"> 
+            <button class="btn btn-outline-success my-btn" type="login"><span class="user-logo"><img
+                  src="./images/user.png" alt=""></span> <span class="login">Login</span></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="body">
+    <div class="body-box1 ">
+      <div class="row1">
+        <div class="box1-text">Are you starving?</div>
+        <div class="box1-text2">Within a few clicks, find meals that are accessible near you</div>
+        <div class="box1-container">
+          <div class="container-button">
+            <p class="d-inline-flex gap-1">
+              <a href="#" class="btn my-button " role="button" data-bs-toggle="button"><img src="./images/Icon.png"
+                  alt=""> Delivery</a>
+              <a href="#" class="btn active btn-active " role="button" data-bs-toggle="button" aria-pressed="true"><img
+                  src="./images/Icon (1).png" alt=""> Pickup
+              </a>
+            </p>
+          </div>
+
+          <div class="dfs">
+            <div class="vox">
+              <span class="address-location"><img src="./images/map-marker-alt.png" alt=""></span>
+              <input class="form-control my-input" type="text" placeholder="Enter Your Address"
+                aria-label="default input example">
+             <button class="btn btn-outline-success my-btun" type="search"><span class="search"><img
+                      src="./images/Search.png" alt=""></span>
+                  <span class="find">Find Food</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="box1-image "><img src="./images/hero-header.png" alt=""></div>
+      </div>
+
+      <div class="body-card">
+        <div class="box-card ">
+          <div class="card border-0" style="width: 18rem;">
+            <div class="discont"><img src="./images/Discount (2).png" alt=""></div>
+            <img src="./images/Image (1).png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title ">Greys Vage</h5>
+              <p class="card-text ">
+              <div class="post-date">6 Days Remaining</div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-card ">
+          <div class="card border-0" style="width: 18rem;">
+            <div class="discont"><img src="./images/Discount (1).png" alt=""></div>
+            <img src="./images/Image.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title ">Greys Vage</h5>
+              <p class="card-text ">
+              <div class="post-date">6 Days Remaining</div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-card">
+          <div class="card border-0" style="width: 18rem;">
+            <div class="discont"><img src="./images/Discount (4).png" alt=""></div>
+            <img src="./images/Image (2).png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title ">Greys Vage</h5>
+              <p class="card-text ">
+              <div class="post-date">7 Days Remaining</div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box-card">
+          <div class="card border-0" style="width: 18rem;">
+            <div class="discont"><img src="./images/Discount (3).png" alt=""></div>
+            <img src="./images/Image (3).png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title ">Greys Vage</h5>
+              <p class="card-text ">
+              <div class="post-date">8 Days Remaining</div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="abc-container">
+        <div class="abc-column1">How does it work</div>
+        <div class="abc-column2">
+          <div class="column2-card">
+            <img class="column2-image" src="./images/Icon (2).png" alt="">
+            <div class="locate">
+              <p> Select location</p>
+            </div>
+            <div class="deliver">
+              <p>Choose the location where your food will be delivered .</p>
+            </div>
+          </div>
+          <div class="column2-card">
+            <img class="column2-image" src="./images/menu" alt="">
+            <div class="locate">
+              <p>Choose order</p>
+            </div>
+            <div class="deliver">
+              <p>Choose the location where your food will be delivered .</p>
+            </div>
+          </div>
+          <div class="column2-card">
+            <img class="column2-image" src="./images/Invoice.png" alt="">
+            <div class="locate">
+              <p> Pay advanced</p>
+            </div>
+            <div class="deliver">
+              <p>It's quick, safe, and simple. Select several methods of payment .</p>
+            </div>
+          </div>
+          <div class="column2-card">
+            <img class="column2-image" src="./images/donut.png" alt="">
+            <div class="locate">
+              <p>Enjoy meals</p>
+            </div>
+            <div class="deliver">
+              <p>Food is made and delivered directly to your home.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-box">
+        <div class="item">
+          <p>Popular items</p>
+        </div>
+        <div class="menu-card">
+          <div class="box-card ">
+            <div class="card border-0" style="width: 16rem;">
+              <img src="./images/zinger.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-titles ">Cheese Burgere</h5>
+                <p class="card-text ">
+                <div class="menu-locarion"><i class="fa-solid fa-location-dot" style="color: #FFB30E;"></i> <span>Burger
+                    Arena</span></div>
+                <div class="menu-rate">
+                  <p>$3.88</p>
+                </div>
+                <div class="order-button">
+                  <button type="button" class="btn btn-primary btn-button border-0" data-bs-toggle="button"
+                    aria-pressed="true">Order Now</button>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="box-card ">
+            <div class="card border-0" style="width: 16rem;">
+              <img src="./images/cake.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-titles ">Toffe’s Cake</h5>
+                <p class="card-text ">
+                <div class="menu-locarion"><i class="fa-solid fa-location-dot" style="color: #FFB30E;"></i> <span>Top
+                    Sticks</span></div>
+                <div class="menu-rate">
+                  <p>$4.00</p>
+                </div>
+                <div class="order-button">
+                  <button type="button" class="btn btn-primary btn-button border-0" data-bs-toggle="button"
+                    aria-pressed="true">Order Now</button>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="box-card ">
+            <div class="card border-0" style="width: 16rem;">
+              <img src="./images/dencake.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-titles ">Dancake</h5>
+                <p class="card-text ">
+                <div class="menu-locarion"><i class="fa-solid fa-location-dot" style="color: #FFB30E;"></i> <span>Cake
+                    World</span></div>
+                <div class="menu-rate">
+                  <p>$1.99</p>
+                </div>
+                <div class="order-button">
+                  <button type="button" class="btn btn-primary btn-button border-0" data-bs-toggle="button"
+                    aria-pressed="true">Order Now</button>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="box-card ">
+            <div class="card border-0" style="width: 16rem;">
+              <img src="./images/sandwitch.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-titles ">Crispy Sandwitch</h5>
+                <p class="card-text ">
+                <div class="menu-locarion"><i class="fa-solid fa-location-dot" style="color: #FFB30E;"></i>
+                  <span>Fastfood Dine</span>
+                </div>
+                <div class="menu-rate">
+                  <p>$3.00</p>
+                </div>
+                <div class="order-button">
+                  <button type="button" class="btn btn-primary btn-button border-0" data-bs-toggle="button"
+                    aria-pressed="true">Order Now</button>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          Featured Restaurants
+        </div>
+        <div class="resturent-card">
+          <div class="resturent-menu">
+            <div class="menu-image"><img src="./images/Image (4).png" alt="">
+              <div class="off">
+                <i class="fa-solid fa-tag" style="color: #ffffff;"></i><span>20% off</span>
+              </div>
+              <div class="off fast">
+                <i class="fa-solid fa-clock" style="color: #ffffff;"></i><span>Fast</span>
+              </div>
+            </div>
+            <div class="rest-logo">
+              <img src="./images/Restaruant Logo.png" alt="">
+              <div>
+                <div class="name">
+                  <div> Foodworld</div>
+                  <i class="fa-solid fa-star" style="color: #ffae00;"></i>
+                  <span>46</span>
+                </div>
+              </div>
+            </div>
+            <button type="button" class=" bttn"
+              style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+              Opens tomorrow
+            </button>
+          </div>
+          <div class="resturent-menu">
+            <div class="menu-image"><img src="./images/pizzahube.png" alt="">
+              <div class="off">
+                <i class="fa-solid fa-tag" style="color: #ffffff;"></i><span>15% off</span>
+              </div>
+              <div class="off fast">
+                <i class="fa-solid fa-clock" style="color: #ffffff;"></i><span>Fast</span>
+              </div>
+            </div>
+            <div class="rest-logo">
+              <img src="./images/pizza Logo.png" alt="">
+              <div>
+                <div class="name">
+                  <div>Pizzahub</div>
+                  <i class="fa-solid fa-star" style="color: #ffae00;"></i>
+                  <span>40</span>
+                </div>
+              </div>
+            </div>
+            <button type="button" class=" bttn"
+              style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+              Opens tomorrow
+            </button>
+          </div>
+          <div class="resturent-menu">
+            <div class="menu-image"><img src="./images/pizzahube.png" alt="">
+              <div class="off">
+                <i class="fa-solid fa-tag" style="color: #ffffff;"></i><span>10% off</span>
+              </div>
+              <div class="off fast">
+                <i class="fa-solid fa-clock" style="color: #ffffff;"></i><span>Fast</span>
+              </div>
+            </div>
+            <div class="rest-logo">
+              <img src="./images/donuts-hut-logo.png" alt="">
+              <div>
+                <div class="name">
+                  <div>Donuts hut</div>
+                  <i class="fa-solid fa-star" style="color: #ffae00;"></i>
+                  <span>20</span>
+                </div>
+              </div>
+            </div>
+            <button type="button" class=" bttn buttn" ;
+              style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; ">
+              Open Now
+            </button>
+          </div>
+          <div class="resturent-menu">
+            <div class="menu-image"><img src="./images/ice.png" alt="">
+              <div class="off">
+                <i class="fa-solid fa-tag" style="color: #ffffff;"></i><span>15% off</span>
+              </div>
+              <div class="off fast">
+                <i class="fa-solid fa-clock" style="color: #ffffff;"></i><span>Fast</span>
+              </div>
+            </div>
+            <div class="rest-logo">
+              <img src="./images/subway Logo.png" alt="">
+              <div>
+                <div class="name">
+                  <div>Donuts hut</div>
+                  <i class="fa-solid fa-star" style="color: #ffae00;"></i>
+                  <span>50</span>
+                </div>
+              </div>
+            </div>
+            <button type="button" class=" bttn buttn" ;
+              style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; ">
+              Open Now
+            </button>
+          </div>
+        </div>
+        <div class="resturent-card">
+          <div class="resturent-menu">
+            <div class="menu-image"><img src="./images/ruby.png" alt="">
+              <div class="off">
+                <i class="fa-solid fa-tag" style="color: #ffffff;"></i><span>10% off</span>
+              </div>
+              <div class="off fast">
+                <i class="fa-solid fa-clock" style="color: #ffffff;"></i><span>Fast</span>
+              </div>
+            </div>
+            <div class="rest-logo">
+              <img src="./images/Ruby Logo.png" alt="">
+              <div>
+                <div class="name">
+                  <div>Ruby Tuesday</div>
+                  <i class="fa-solid fa-star" style="color: #ffae00;"></i>
+                  <span>26</span>
+                </div>
+              </div>
+            </div>
+            <button type="button" class=" bttn buttn"
+              style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+              Open Now
+            </button>
+          </div>
+          <div class="resturent-menu">
+            <div class="menu-image"><img src="./images/chicken.png" alt="">
+              <div class="off">
+                <i class="fa-solid fa-tag" style="color: #ffffff;"></i><span>25% off</span>
+              </div>
+              <div class="off fast">
+                <i class="fa-solid fa-clock" style="color: #ffffff;"></i><span>Fast</span>
+              </div>
+            </div>
+            <div class="rest-logo">
+              <img src="./images/KFC.png" alt="">
+              <div>
+                <div class="name">
+                  <div>Kuakata Fried Chicken</div>
+                  <i class="fa-solid fa-star" style="color: #ffae00;"></i>
+                  <span>53</span>
+                </div>
+              </div>
+            </div>
+            <button type="button" class=" bttn buttn"
+              style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+              Open Now
+            </button>
+          </div>
+          <div class="resturent-menu">
+            <div class="menu-image"><img src="./images/squre.png" alt="">
+              <div class="off">
+                <i class="fa-solid fa-tag" style="color: #ffffff;"></i><span>10% off</span>
+              </div>
+              <div class="off fast">
+                <i class="fa-solid fa-clock" style="color: #ffffff;"></i><span>Fast</span>
+              </div>
+            </div>
+            <div class="rest-logo">
+              <img src="./images/Red square Logo.png" alt="">
+              <div>
+                <div class="name">
+                  <div>Red Square</div>
+                  <i class="fa-solid fa-star" style="color: #ffae00;"></i>
+                  <span>45</span>
+                </div>
+              </div>
+            </div>
+            <button type="button" class=" bttn buttn" ;
+              style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; ">
+              Open Now
+            </button>
+          </div>
+          <div class="resturent-menu">
+            <div class="menu-image"><img src="./images/bell.png" alt="">
+              <div class="off">
+                <i class="fa-solid fa-tag" style="color: #ffffff;"></i><span>15% off</span>
+              </div>
+              <div class="off fast">
+                <i class="fa-solid fa-clock" style="color: #ffffff;"></i><span>Fast</span>
+              </div>
+            </div>
+            <div class="rest-logo">
+              <img src="./images/bell Logo.png" alt="">
+              <div>
+                <div class="name">
+                  <div>Taco Bell</div>
+                  <i class="fa-solid fa-star" style="color: #ffae00;"></i>
+                  <span>35</span>
+                </div>
+              </div>
+            </div>
+            <button type="button" class=" bttn buttn" ;
+              style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; ">
+              Open Now
+            </button>
+          </div>
+        </div>
+        <div class="view">
+          <button class="btn btn-success border-0"><span> View All </span><i
+              class="fa-solid fa-angle-right"></i></button>
+        </div>
+        <div class="order-card">
+          <div class="column-card">
+            <div class="card-image">
+              <img src="./images/pizza.png" alt="">
+              <div class="card-name">Pizza</div>
+            </div>
+            <div class="card-image">
+              <img src="./images/burger1.png" alt="">
+              <div class="card-name">Burger</div>
+            </div>
+            <div class="card-image">
+              <img src="./images/noodles.png" alt="">
+              <div class="card-name">Noodles</div>
+            </div>
+            <div class="card-image">
+              <img src="./images/sandwitch1.png" alt="">
+              <div class="card-name">Sub-sandiwch</div>
+            </div>
+            <div class="card-image">
+              <img src="./images/chowmeain.png" alt="">
+              <div class="card-name">Chowmein</div>
+            </div>
+            <div class="card-image">
+              <img src="./images/steak.png" alt="">
+              <div class="card-name">Steak</div>
+            </div>
+          </div>
+          <div class="column-2">
+            <div class="column2-name">
+              Search by Food
+            </div>
+            <div class="column2-row2">
+              <span class="all">View All <i class="fa-solid fa-angle-right"></i></span>
+              <span class="lessthan"><i class="fa-solid fa-angle-left"></i></span>
+              <span class="lessthan"><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="xyz">
+          <div class="live-card">
+            <div class="card1">
+              <div class="card1-image"><img src="./images/percent.png" alt=""></div>
+              <div class="card1-name">Daily Discounts </div>
+            </div>
+            <div class="card1">
+              <div class="card1-image"><img src="./images/live-tracking.png" alt=""></div>
+              <div class="card1-name">Live
+                Tracing</div>
+            </div>
+            <div class="card1">
+              <div class="card1-image"><img src="./images/quick-delivery.png" alt=""></div>
+              <div class="card1-name">Quick
+                Delivery</div>
+            </div>
+          </div>
+
+          <div class="abc-text1">
+            <div class="abc-image"><img src="./images/phone-cta-one.png" alt=""></div>
+            <div class="abc-column3">
+              <div class="abc-column3-text">Install the app </div>
+              <div class="abc-column3-p">It's never been easier to order food. Look for the finest discounts and you'll
+                be lost in a world of delectable food.</div>
+              <div class="column3-image">
+                <div class="google">
+                  <div class="google-play">
+                    <img src="./images/Google Play logo.png" alt="">
+                  </div>
+                  <div class="">
+                    <div class="google-text">GET IT ON </div>
+                    <div class="play"><b> Google Play</b></div>
+                  </div>
+                </div>
+                <div class="google">
+                  <div class="google-play">
+                    <i class="fa-brands fa-apple" style="color: #ff7b00;"></i>
+                  </div>
+                  <div class="">
+                    <div class="google-text">Download</div>
+                    <div class="play"><b>App Store</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="curve"><img src="./images/Curve.png" alt=""></div>
+        </div>
+        <div class="large-card">
+          <div class="card mb-3 my-card" style="max-width: 1000px;">
+            <div class="row g-0  ">
+              <div class="col-md-4 col-text">
+                <div class="col-text1">Best deals <span> Crispy Sandwiches</span></div>
+                <div class="col-text2">
+                  Enjoy the large size of sandwiches. Complete
+                  perfect slice of sandwiches.
+                </div>
+                <div class="proceed">
+                  Proceed to order <span><i class="fa-solid fa-angle-right"></i></span>
+                </div>
+              </div>
+              <div class="col-md-8 col-image ">
+                <img src="./images/crispy.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 my-card " style="max-width: 1000px;">
+            <div class="row g-0 my-card1">
+              <div class="col-md-4 col-text">
+                <div class="col-text1">Celebrate parties with
+                  <span> Fried Chicken </span>
+                </div>
+                <div class="col-text2">
+                  Get the best fried chicken smeared with a lip smacking lemon chili flavor. Check out <br>
+                  best deals for fried chicken.
+                </div>
+                <div class="proceed">
+                  Proceed to order <span><i class="fa-solid fa-angle-right"></i></span>
+                </div>
+              </div>
+              <div class="col-md-8 col-image col-image1">
+                <img src="./images/fried.png" alt="">
+              </div>
+
+            </div>
+          </div>
+          <div class="card mb-3 my-card" style="max-width: 1000px;">
+            <div class="row g-0  ">
+              <div class="col-md-4 col-text">
+                <div class="col-text1">Wanna eat hot
+                  & spicy <span> Pizza?</span></div>
+                <div class="col-text2">
+                  Pair up with a friend and enjoy the <br>
+                  hot and crispy pizza pops. Try it
+                  with the best deals.
+                </div>
+                <div class="proceed">
+                  Proceed to order <span><i class="fa-solid fa-angle-right"></i></span>
+                </div>
+              </div>
+              <div class="col-md-8 col-image ">
+                <img src="./images/large-pizza.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="abc"> 
+          <div class="abcimage">
+             <img src="./images/bg image.png" alt="">
+          </div>
+          <div class="abc-text5"> 
+            <div class="abctext3">
+                Are you ready to order with <br> the best deals? 
+            </div>
+          
+          <div class="proceed abc-proceed">
+            Proceed to order <span><i class="fa-solid fa-angle-right"></i></span>
+          </div>
+          </div>
+         
+          </div>
+
+          <div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footerbox">
+        <div class="footer-column1">
+        <div class="footer-text">Our top cities</div>
+        <div class="footer-text1">
+          <div class="box-text">
+            <div class="text1">San Francisco</div>
+            <div class="text1">Miami</div>
+            <div class="text1">San Diego</div>
+            <div class="text1">East Bay</div>
+            <div class="text1">Long Beach</div>
+          </div>
+          <div class="box-text">
+            <div class="text1">Los Angeles</div>
+            <div class="text1">Washington DC</div>
+            <div class="text1">Seattle</div>
+            <div class="text1">Portland</div>
+            <div class="text1">Nashville</div>
+          </div>
+          <div class="box-text">
+            <div class="text1">New York City</div>
+            <div class="text1">Orange County</div>
+            <div class="text1">Atlanta</div>
+            <div class="text1">Charlotte</div>
+            <div class="text1">Denver</div>
+          </div>
+          <div class="box-text">
+            <div class="text1">Chicago</div>
+            <div class="text1">Phoenix</div>
+            <div class="text1">Las Vegas</div>
+            <div class="text1">Sacramento</div>
+            <div class="text1">Oklahoma City</div>
+          </div>
+          <div class="box-text">
+            <div class="text1">Columbus</div>
+            <div class="text1">New Mexico</div>
+            <div class="text1">Albuquerque</div>
+            <div class="text1">Sacramento</div>
+            <div class="text1">New Orleans</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-column2">
+        <div class="footer-box1">
+          <div class="footerbox1-text">
+            <div class="text-head">Company</div>
+            <div class="text-data">About us</div>
+            <div class="text-data">Team</div>
+            <div class="text-data">Careers</div>
+            <div class="text-data">Blog</div>
+          </div>  
+          <div class="footerbox1-text">
+            <div class="text-head">Contact</div>
+            <div class="text-data">Help & Support</div>
+            <div class="text-data">Partner with us </div>
+            <div class="text-data">Ride with us</div>
+          </div>  
+          <div class="footerbox1-text">
+            <div class="text-head">Legal</div>
+            <div class="text-data">Terms & Conditions</div>
+            <div class="text-data">Refund & Cancellation</div>
+            <div class="text-data">Privacy Policy</div>
+            <div class="text-data">Cookie Policy</div>
+          </div>         
+           
+          
+        </div>
+        <div class="footer-box1 box2">
+          <div class="text-head1">Follow Us</div>
+          <div class="footer-icon"><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i></div>
+          <div class="box2-text">Receive exclusive offers in your mailbox</div>
+          <div class="footer-input ">
+           <i class="fa-solid fa-envelope"></i> 
+            <input  type="text" placeholder="Enter Your Email" >
+           <div class="footer-btn">
+            <button>submit</button>
+           </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+       
+    <div class="footer-bar">
+      <div class="footer-bar-text">
+        <div> All rights Reserved </div>
+       <div><i class="fa-regular fa-copyright"></i></div>
+       <div>Your Company, 2021</div> 
+      </div>
+      <div class="power">Powered By <b>Muhammad Saad hussain</b> </div>
+    </div>
+    </div>
+  </div>
+</body>
+
+</html>
